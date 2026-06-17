@@ -1,0 +1,41 @@
+🧩 Coding Task: Mini Banking Service (Spring Boot)
+🎯 Objective
+Design and implement a small backend service that simulates a simplified banking system. The goal is to demonstrate your ability to design clean APIs, model domain logic, and ensure data consistency — especially under concurrent and distributed access.
+⸻
+🏗️ Technical Requirements
+
+Use Spring Boot
+Use a relational database
+Expose functionality via RESTful endpoints
+Application should be runnable locally with minimal setup
+Application is expected to be run on multiple server instances
+
+
+⸻
+💼 Domain Overview
+Transactions
+
+Transaction represents a single debit operation
+Each transaction:
+Has an amount
+Has a name
+For API consumers, a Transaction is identified by unique name
+
+⸻
+Refunds
+
+Each transaction can have multiple refunds
+Each refund:
+Belongs to a transaction
+Has an amount
+Has a name
+For API consumers, a Refund is identified by unique name
+Constraint:
+The total refunded amount must never exceed the original transaction amount
+
+⸻
+⚙️ Functional Requirements
+Provide REST endpoints to support at least:
+
+Create and retrieve transaction
+Refund a transaction (partial refunds allowed, multiple times)

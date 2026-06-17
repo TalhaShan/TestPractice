@@ -1,11 +1,10 @@
 spring:
   application:
-    name: Built-It
-
+    name: Test2
 
 
   datasource:
-    url: jdbc:mysql://localhost:3306/ecommerce?allowPublicKeyRetrieval=true&useSSL=false
+    url: jdbc:mysql://localhost:3306/test2?useSSL=false&serverTimezone=UTC
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
